@@ -1,0 +1,164 @@
+/* ShoppingCart.css */
+
+.shopping-cart {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.total-info {
+  display: flex;
+  flex-direction: column;
+  /* סידור אנכי של הכפתור והכותרת */
+  align-items: center;
+  /* ממרכז את האלמנטים */
+  background-color: #e0f7fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-update {
+  align-self: flex-start;
+  /* יישר את הכפתור לצד שמאל */
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+  /* רווח בין הכפתור לשאר הפרטים */
+}
+
+.cart-title {
+  flex-grow: 1;
+  /* תן מקום לכותרת */
+  text-align: center;
+  /* ממרכז את הכותרת */
+}
+
+.total-info p {
+  margin: 5px 0;
+  /* רווח בין הפסקאות */
+  text-align: center;
+  /* ממרכז את הטקסט */
+}
+
+
+.total-info h3 {
+  color: #00796b;
+}
+
+.btn-update:hover {
+  background-color: #45a049;
+  /* גוון כהה יותר של ירוק בעת ה-hover */
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item:hover {
+  transform: translateY(-2px);
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item-details h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.cart-item-details p {
+  margin: 5px 0;
+}
+
+button {
+  background-color: #39dc4c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 5px;
+  justify-content: center;
+  align-items: center;
+  /* מוסיף רווח בין הכפתורים */
+  width: auto;
+
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+p {
+  text-align: center;
+  color: #666;
+}
+
+.btn-increase {
+  background-color: #4caf50;
+}
+
+.btn-increase:hover {
+  background-color: #45a049;
+}
+
+
+.btn-decrease {
+  background-color: #f44336;
+}
+
+.btn-decrease:hover {
+  background-color: #e53935;
+}
+
+.btn-remove {
+  background-color: yellow;
+  /* צבע אדום */
+  color: black;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: self-end;
+}
+
+.btn-remove:hover {
+  background-color: rgb(216, 216, 112);
+  /* גוון כהה יותר של אדום בעת ה-hover */
+}

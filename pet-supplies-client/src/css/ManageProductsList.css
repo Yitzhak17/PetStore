@@ -1,0 +1,94 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* מספר עמודות גמישות */
+  gap: 20px;
+  /* רווח בין הכרטיסים */
+  padding: 5px;
+  margin: 5px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+
+  /* הוספנו את ההגדרה הזו כדי למנוע חפיפות */
+  box-shadow: 0 2px 8px rgba(226, 184, 184, 0.1);
+  transition: transform 0.2s;
+  /* האנימציה על הגדלת הכרטיס */
+
+  width: 200px;
+  height: auto;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+  /* הגדלה קלה כשמעבירים עם העכבר */
+}
+
+.product-image {
+  width: 100%;
+  height: 100px;
+  /* גובה קבוע לכל התמונות */
+  object-fit: contain;
+  /* שומר על יחס הגובה/רוחב */
+}
+
+.product-details {
+  padding: 1px;
+}
+
+.product-name {
+  font-size: 1.2em;
+  margin: 2px;
+}
+
+.product-description {
+  font-size: 0.9em;
+  color: #555;
+  /* צבע טקסט בהיר יותר */
+  margin-bottom: 0.5em;
+}
+
+.product-price {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  /* מפזר את הכפתורים על פני הקו */
+}
+
+.edit-button,
+.delete-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #4caf50;
+  /* ירוק */
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #45a049;
+  /* ירוק כהה */
+}
+
+.delete-button {
+  background-color: #f44336;
+  /* אדום */
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #e53935;
+  /* אדום כהה */
+}

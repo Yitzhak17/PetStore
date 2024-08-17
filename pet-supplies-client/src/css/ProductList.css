@@ -1,0 +1,81 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    /* עיצוב גריד */
+    gap: 20px;
+    /* רווחים בין הכרטיסים */
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* כך שכולו יהיה באותו גובה */
+}
+
+.product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    /* לשמור על יחס הגובה רוחב */
+}
+
+.product-name,
+.product-description,
+.product-price {
+    margin: 0.5em 0;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* פיזור הכפתורים והכמות */
+}
+
+.add-button,
+.subtract-button {
+    padding: 8px 12px;
+    /* מרווחים על הלחצנים */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button {
+    background-color: #4caf50;
+    /* ירוק */
+    color: white;
+}
+
+.add-button:hover {
+    background-color: #45a049;
+    /* ירוק כהה */
+}
+
+.subtract-button {
+    background-color: #f44336;
+    /* אדום */
+    color: white;
+}
+
+.subtract-button:hover {
+    background-color: #e53935;
+    /* אדום כהה */
+}
+
+.button-add {
+    background-color: yellow;
+    color: black;
+}
+
+.button-add:hover {
+    background-color: rgb(216, 216, 112);
+
+}

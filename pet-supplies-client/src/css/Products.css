@@ -1,0 +1,47 @@
+.products-page {
+    display: flex;
+    /* משתמשים ב-Flexbox כדי להפריד בין הפילטרים לרשימת המוצרים */
+    flex-direction: row;
+    /* קובע הכיוון */
+}
+
+.filters {
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-top: 20px;
+    /* הוספת מרווח מלמעלה */
+    display: flex;
+    flex-direction: column;
+}
+
+.filters input,
+.filters button {
+    margin-bottom: 10px;
+}
+
+.products-list {
+    flex-grow: 1;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+
+.price-range {
+    margin-bottom: 20px;
+}
+
+.price-labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories,
+.brands {
+    margin-bottom: 20px;
+}
+
+.categories label,
+.brands label {
+    display: block;
+}

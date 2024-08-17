@@ -1,0 +1,93 @@
+/* Login.css */
+
+.auth-form {
+  max-width: 400px;
+  /* רוחב מקסימלי */
+  margin: 50px auto;
+  /* מרכז את הטור בדף */
+  padding: 20px;
+  background-color: #f9f9f9;
+  /* רקע בהיר */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  /* צל במבנה */
+  font-family: 'Arial', sans-serif;
+  /* גופנים נוחים */
+}
+
+h2 {
+  text-align: center;
+  /* מרכז את הטקסט */
+  color: #333;
+  /* צבע כהה */
+}
+
+label {
+  font-size: 1.1em;
+  /* גודל טקסט */
+  color: #555;
+  /* צבע כהה יותר */
+}
+
+input {
+  width: 100%;
+  /* ימלא את כל החלל */
+  padding: 10px;
+  margin: 0 0 20px 0;
+  /* רווחים */
+  border: 1px solid #ddd;
+  /* גבול בהיר */
+  border-radius: 5px;
+  /* פינות מעוגלות */
+  transition: border-color 0.3s;
+  /* מעבר צבע */
+}
+
+input:focus {
+  border-color: #00796b;
+  /* שינוי צבע גבול בשדה התפוס */
+  outline: none;
+  /* נתר "outline" בשימוש */
+}
+
+button {
+  width: 100%;
+  /* שיפוט במידות */
+  padding: 10px;
+  background-color: #4caf50;
+  /* צבע ירוק */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /* שינוי צבע בעת-hover */
+}
+
+button:hover {
+  background-color: #45a049;
+  /* גוון כהה יותר של ירוק בעת החזקה */
+}
+
+.message {
+  margin: 10px 0;
+  /* רווחים בין אלמנטים */
+  color: red;
+  /* צבע טקסט לשגיאות */
+  text-align: center;
+  /* מרכז את הטקסט */
+}
+
+p {
+  text-align: center;
+  /* מרכז את כל הטקסט עד פרייפרים */
+  color: #00796b;
+  /* צבע מותאם */
+  cursor: pointer;
+  /* מצביע */
+}
+
+p:hover {
+  text-decoration: underline;
+  /* קו תחתון ב-hover */
+}

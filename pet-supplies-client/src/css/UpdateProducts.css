@@ -1,0 +1,69 @@
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* מרווח בין כרטיסים */
+  justify-content: center;
+  /* מרכז את הכרטיסים */
+  padding: 20px;
+}
+
+.product-card {
+  background-color: #ffffff;
+  /* צבע רקע לבן */
+  border: 1px solid #ddd;
+  /* גבול שולי */
+  border-radius: 10px;
+  /* פינות מעוגלות */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* צל */
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  /* אנימציה */
+  width: 220px;
+  /* רוחב קבוע */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  /* הזזה קטנה יותר כשמעבירים על הכרטיס */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  /* צל חזק יותר */
+}
+
+.product-image {
+  width: 100%;
+  /* תופס את רוחב הכרטיס */
+  height: auto;
+  /* שומר על יחס גובה/רוחב */
+  border-radius: 10px;
+  /* מעגל את הפינות של התמונה */
+  margin-bottom: 10px;
+  /* מרווח תחתון בין התמונה לשאר הטקסט */
+}
+
+h2 {
+  font-size: 1.5rem;
+  /* גודל טקסט עבור שם המוצר */
+  color: #333;
+  /* צבע טקסט כהה */
+  margin: 10px 0;
+  /* מרווח סביב כותרת */
+}
+
+p {
+  color: #666;
+  /* צבע טקסט אפור */
+  margin: 5px 0;
+  /* מרווח סביב פסקאות */
+}
+
+.product-price {
+  font-size: 1.2rem;
+  /* גודל טקסט עבור מחיר */
+  color: #E94E77;
+  /* צבע טקסט עבור מחיר, לדוגמה ורוד כהה */
+  font-weight: bold;
+  /* טקסט בולט */
+}

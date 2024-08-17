@@ -1,0 +1,29 @@
+.animal-products {
+  max-width: 1200px;
+  /* גובה מירבי לדף */
+  margin: 0 auto;
+  /* מרכז את התצוגה על המסך */
+  padding: 20px;
+  /* רווח פנימי */
+  font-family: Arial, sans-serif;
+  /* גופן קריא */
+  color: #333;
+  /* צבע טקסט כהה */
+}
+
+h2 {
+  margin-bottom: 20px;
+  /* מרווח מתחת לכותרת */
+  font-size: 2em;
+  /* גודל כותרת */
+  color: #4CAF50;
+  /* צבע הכותרת */
+}
+
+.product-list-container {
+  display: flex;
+  flex-direction: column;
+  /* להציב סידור של השורות בסדר */
+  gap: 20px;
+  /* מרווח בין אלמנטים */
+}

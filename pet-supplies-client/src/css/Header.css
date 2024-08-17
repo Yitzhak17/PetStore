@@ -1,0 +1,54 @@
+.header-nav {
+  background-color: #ff9900;
+  /* צבע רקע כללי */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* קופסה עם צל */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  /* הסרת קו תחתון */
+  margin-right: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+  /* רווח בין כפתורים */
+}
+
+.link-btn {
+  background-color: #007bff;
+  /* כחול קרן */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  /* הסרת קו תחתון */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  /* מרוכך */
+}
+
+.link-btn:hover {
+  background-color: #0056b3;
+  /* כהה יותר בריחוף */
+}
+
+.login-button {
+  margin-left: auto;
+  /* מפזר את כפתור הלוגין לצד הימני ביותר */
+}

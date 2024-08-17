@@ -1,0 +1,83 @@
+.add-product-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.add-product-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.add-product-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.add-product-form label {
+  font-weight: bold;
+  color: #555;
+  flex: 0 0 150px;
+  /* רוחב קבוע לכל label */
+  text-align: right;
+  /* יישור לימין */
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.add-product-form input[type="text"],
+.add-product-form input[type="number"],
+.add-product-form textarea,
+.add-product-form select {
+  flex: 1;
+  /* תופס את כל המקום הנותר */
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.add-product-form input[type="text"]:focus,
+.add-product-form input[type="number"]:focus,
+.add-product-form textarea:focus,
+.add-product-form select:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.add-product-form textarea {
+  resize: vertical;
+}
+
+.add-product-form button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: center;
+  /* המרכזת את הכפתור */
+}
+
+.add-product-form button:hover {
+  background-color: #0056b3;
+}
+
+.add-product-form button:active {
+  background-color: #004494;
+}

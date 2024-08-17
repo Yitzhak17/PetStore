@@ -1,0 +1,55 @@
+/* SearchBar.css */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  max-width: 400px;
+  /* רוחב מקסימלי */
+  position: relative;
+  /* מאפשר חפיפה עם ההצעות */
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  flex-grow: 1;
+  /* מאפשר לשדה הקלט לתפוס את כל החלל הפנוי */
+}
+
+.search-button {
+  background-color: transparent;
+  /* רקע שקוף */
+  border: none;
+  cursor: pointer;
+}
+
+.suggestions {
+  position: absolute;
+  /* מיקוד ההצעות מתחת לתיבת הקלט */
+  top: 100%;
+  /* מתחת לשדה הקלט */
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  z-index: 100;
+  max-height: 200px;
+  /* הגבלת גובה ההצעות */
+  overflow-y: auto;
+  /* גלילה אם יש יותר מדי הצעות */
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+  /* גוון בהיר יותר בהעברת העכבר */
+}

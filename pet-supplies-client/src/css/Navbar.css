@@ -1,0 +1,58 @@
+/* Navbar.css */
+
+.navbar {
+  background-color: #ff9900;
+  /* צבע רקע של ה-navbar */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  /* רלוונטי כשנמצאים מתחת לHeader */
+}
+
+.main-categories {
+  display: flex;
+  /* מסודר ברצף */
+  list-style-type: none;
+  /* מסיר מספור */
+  padding: 0;
+  /* מסיר רפידות */
+  margin: 0;
+  /* מסיר רפידות חיצוניות */
+}
+
+.main-categories li {
+  position: relative;
+  /* לממש לקטגוריות משנה */
+  margin-right: 20px;
+  /* מרווח בין קטגוריות */
+}
+
+.category-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-icon img {
+  height: 30px;
+  /* גובה התמונה */
+  margin-bottom: 5px;
+  /* רווח מתחת לתמונה */
+}
+
+.subcategories {
+  position: absolute;
+  /* מופיע מתחת כשהקטגוריה פעילה */
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  display: none;
+  /* נסתר כברירת מחדל */
+  z-index: 1;
+}
+
+.main-categories li:hover .subcategories {
+  display: block;
+  /* מציג את הקטגוריות משנה בהנחה */
+}

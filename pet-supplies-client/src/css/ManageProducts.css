@@ -1,0 +1,122 @@
+.manage-products {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.products-container {
+  display: flex;
+}
+
+.filters-container {
+  width: 25%;
+  /* הגדר גובה לפילטרים */
+  margin-right: 20px;
+  /* מרווח בין הפילטר לרשימת המוצרים */
+}
+
+.product-list-container {
+  width: 75%;
+  /* הגדר גובה לרשימה */
+}
+
+.add-product-button {
+  padding: 10px 15px;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.add-product-button:hover {
+  background-color: #e43b3b;
+}
+
+h2,
+h3,
+h4 {
+  color: #333;
+}
+
+.filters {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.price-range,
+.categories,
+.brands {
+  margin-bottom: 15px;
+}
+
+.price-labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-checkbox,
+.brand-checkbox {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.product-image {
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.product-name {
+  flex-grow: 1;
+}
+
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  width: 70px;
+}
+
+.edit-button {
+  background-color: #4caf50;
+  /* ירוק */
+  color: white;
+
+}
+
+.edit-button:hover {
+  background-color: #45a049;
+  /* ירוק כהה */
+}
+
+.delete-button {
+  background-color: #f44336;
+  /* אדום */
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #e53935;
+  /* אדום כהה */
+}
