@@ -42,5 +42,12 @@
 
 .categories label,
 .brands label {
-  display: block;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  white-space: nowrap; /* שומר שהטקסט יישאר בשורה אחת */
+}
+
+.filters input[type='checkbox'] {
+  margin-right: 10px;
 }
