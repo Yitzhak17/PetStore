@@ -29,32 +29,31 @@ const AddProductForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    const confirmAdd = window.confirm('Do you want to add this product?')
-    if (!confirmAdd) {
-      setMessage("Product's addition canceled.")
-      return
+    // להמיר את המחיר למספר
+    const updatedFormData = {
+      ...formData,
+      price: Number(formData.price),
+      stock: Number(formData.stock),
     }
 
-    // Validate that imageUrl is a valid URL (optional)
-    if (!isValidUrl(formData.imageUrl)) {
-      setMessage('Invalid image URL.')
-      return
-    }
+    console.log(updatedFormData) // בדוק את הנתונים שנשלחים
 
     try {
       const response = await axios.post(
         'http://localhost:5000/api/products/addproduct',
-        formData
+        updatedFormData
       )
       if (response.status === 201) {
         setMessage('Product added successfully!')
-        console.log('Product added successfully:', response.data)
-        navigate('/') // Navigate to home page
+        navigate('/')
       } else {
         setMessage('Failed to add product.')
       }
     } catch (error) {
       console.error('Error adding product:', error)
+      if (error.response) {
+        console.log('Server response:', error.response.data)
+      }
       setMessage('Error adding product.')
     }
   }
